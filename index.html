@@ -18,7 +18,7 @@
     <meta property="og:image" content="배포 후 생성된 이미지 URL" />
     <!-- Google Fonts -->
     <link
-      ref="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=IBM+Plex+Sans+KR:wght@500&family=Noto+Sans+KR:wght@100;200;300;400&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap"
       rel="stylesheet"
     />
     <!-- Font Awesome -->
@@ -33,19 +33,31 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div>
-        <img src="./images/avatar.png" alt="avatar" />
-        <h1><a href="#">Hyuk2</a></h1>
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="./images/avatar.jpg" alt="avatar" />
+        <h1 class="header__logo__title"><a href="#">Hyuk2</a></h1>
       </div>
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Work</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="header__menu">
+          <li>
+            <a class="header__menu__item selected" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="header__menu__item" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__menu__item" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="header__menu__item" href="#projects">Work</a>
+          </li>
+          <li>
+            <a class="header__menu__item" href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a class="header__menu__item" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -53,13 +65,16 @@
     <main>
       <!-- Home -->
       <section id="home">
-        <img src="./images/profile.png" alt="Hyuk2's profile" />
-        <h2>안녕하세요. 매일 밤에 깨어있는 조민혁의 포트폴리오입니다.</h2>
-        <p>
+        <img class="home__profile" src="./images/profile.png" alt="Hyuk2's profile"/>
+        <h2 class="home__title">
+          안녕하세요.<br />
+          <strong class="home__title--strong">매일 밤에 깨어있는</strong> 조민혁의 포트폴리오입니다.
+        </h2>
+        <p class="home__description">
           쉬는 날 없이 공부를 꾸준히 하면서, 프론트엔드 개발자를 목표로 하고
           있습니다.
         </p>
-        <a href="#contact">Contact me</a>
+        <a class="home__contactBtn" href="#contact">Contact me</a>
       </section>
       <!-- About -->
       <section id="about">
