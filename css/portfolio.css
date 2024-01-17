@@ -23,11 +23,15 @@
 }
 
 body {
-  font-family: 'Sunflower', sans-serif;
+  font-family: "Sunflower", sans-serif;
   margin: 0;
 }
 
-h1, h2, h3, p, ul {
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
 }
 
@@ -54,7 +58,7 @@ button:focus {
 /* Common */
 .section {
   padding: 4rem;
-  text-align: center;;
+  text-align: center;
 }
 
 .max-container {
@@ -74,7 +78,7 @@ button:focus {
 
 /* Header */
 .header {
-  background-color: var(--color-primary);
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
@@ -83,6 +87,12 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  transition: all 250ms ease-in;
+}
+
+.header--dark {
+  background-color: var(--color-primary);
+  box-shadow: rgba(13, 38, 76, 0.19) 0px 9px 20px;
 }
 
 .header__logo {
@@ -126,6 +136,10 @@ button:focus {
   padding: 5rem 1rem;
   padding-top: 7rem;
   text-align: center;
+}
+
+.home__opacity {
+  opacity: 1;
 }
 
 .home__profile {
@@ -180,7 +194,7 @@ button:focus {
   color: var(--color-text);
   border-radius: 1rem;
   cursor: default;
-  box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
 }
 
 .major__icon {
@@ -237,12 +251,10 @@ button:focus {
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 
-    0 12.5px 10px rgba(0, 0, 0, 0.06), 
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086), 
-    0 100px 80px rgba(0, 0, 0, 0.12)
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .skills__title {
@@ -377,7 +389,7 @@ button:focus {
 }
 
 .project__title:after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   left: 50%;
@@ -408,13 +420,13 @@ button:focus {
   width: 150px;
   height: 150px;
   border-radius: 100%;
-  box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
 }
 
 .testimonial__bubble {
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
 }
 
 .testimonial__bubble__name {
@@ -436,8 +448,7 @@ button:focus {
   border-radius: 100%;
   text-align: center;
   box-shadow: var(--color-accent) 0px 0px 0px 2px,
-    var(--color-accent) 0px 4px 6px -1px, 
-    var(--color-accent) 0px 1px 0px inset;
+    var(--color-accent) 0px 4px 6px -1px, var(--color-accent) 0px 1px 0px inset;
 }
 
 /* Footer */
@@ -537,7 +548,7 @@ button:focus {
     order: 0;
   }
 
-  .testimonial__bubble{
+  .testimonial__bubble {
     width: 100%;
   }
 
