@@ -38,7 +38,7 @@
         <img class="header__logo__img" src="./images/avatar.jpg" alt="avatar" />
         <h1 class="header__logo__title"><a href="#">Hyuk2</a></h1>
       </div>
-      <nav>
+      <nav class="header__nav">
         <ul class="header__menu">
           <li>
             <a class="header__menu__item selected" href="#home">Home</a>
@@ -115,210 +115,235 @@
       </section>
       <!-- Skills -->
       <section id="skills" class="section">
-        <h2 class="title">My Skills</h2>
-        <p class="description">Skills & Attributes</p>
-        <p>
-          HTML, CSS, JavaScript를 학습해서, 무리없이 구현할 수 있는 정도입니다.
-          TypeScript, React, NodeJs, React Native를 학습할 예정입니다.
-        </p>
-        <div>
-          <section>
-            <h3>Coding Skills</h3>
-            <ul>
-              <li>
-                <div><span>HTML</span><span>80%</span></div>
-                <div><div style="width: 80%"></div></div>
-              </li>
-              <li>
-                <div><span>CSS</span><span>80%</span></div>
-                <div><div style="width: 80%"></div></div>
-              </li>
-              <li>
-                <div><span>JavaScript</span><span>85%</span></div>
-                <div><div style="width: 85%"></div></div>
-              </li>
-              <li>
-                <div><span>TypeScript</span><span>1%</span></div>
-                <div><div style="width: 1%"></div></div>
-              </li>
-              <li>
-                <div><span>React</span><span>1%</span></div>
-                <div><div style="width: 1%"></div></div>
-              </li>
-              <li>
-                <div><span>NodeJs</span><span>1%</span></div>
-                <div><div style="width: 1%"></div></div>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>Tools</h3>
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>IntelliJ</li>
-              <li>Eclipse</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Etc</h3>
-            <ul>
-              <li>Git</li>
-            </ul>
-          </section>
+        <div class="max-container">
+          <h2 class="title">My Skills</h2>
+          <p class="description">Skills & Attributes</p>
+          <p>
+            HTML, CSS, JavaScript를 학습해서, 무리없이 구현할 수 있는 정도입니다.
+            TypeScript, React, NodeJs, React Native를 학습할 예정입니다.
+          </p>
+          <div class="skills-container">
+            <section class="skills__coding">
+              <h3 class="skills__title">Coding Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>CSS</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>85%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 85%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>TypeScript</span><span>1%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 1%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span><span>1%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 1%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>NodeJs</span><span>1%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 1%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ</li>
+                <li>Eclipse</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>Git</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
       <!-- Project -->
       <section id="projects" class="section">
-        <h2 class="title">My Projects</h2>
-        <p class="description">Projects</p>
-        <ul>
-          <li>
-            <button>All <span>8</span></button>
-          </li>
-          <li>
-            <button>Front-end <span>3</span></button>
-          </li>
-          <li>
-            <button>Back-end <span>3</span></button>
-          </li>
-          <li>
-            <button>Mobile <span>2</span></button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project1.webp" alt="project1" />
-              <div>
-                <h3>Project #1</h3>
-                <p>Clone Coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project2.webp" alt="project2" />
-              <div>
-                <h3>Project #2</h3>
-                <p>Clone Coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project3.webp" alt="project3" />
-              <div>
-                <h3>Project #3</h3>
-                <p>Clone Coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project4.webp" alt="project4" />
-              <div>
-                <h3>Project #4</h3>
-                <p>Clone Coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project5.webp" alt="project5" />
-              <div>
-                <h3>Project #5</h3>
-                <p>Clone Coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project6.webp" alt="project6" />
-              <div>
-                <h3>Project #6</h3>
-                <p>Clone Coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project7.webp" alt="project7" />
-              <div>
-                <h3>Project #7</h3>
-                <p>Clone Coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project8.webp" alt="project8" />
-              <div>
-                <h3>Project #8</h3>
-                <p>Clone Coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <div class="max-container">
+          <h2 class="title">My Projects</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected">All <span class="category__count">8</span></button>
+            </li>
+            <li>
+              <button class="category">Front-end <span class="category__count">3</span></button>
+            </li>
+            <li>
+              <button class="category">Back-end <span class="category__count">3</span></button>
+            </li>
+            <li>
+              <button class="category">Mobile <span class="category__count">2</span></button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="./images/project1.webp" alt="project1" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="./images/project2.webp" alt="project2" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #2</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="./images/project3.webp" alt="project3" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #3</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="./images/project4.webp" alt="project4" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #4</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="./images/project5.webp" alt="project5" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #5</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="./images/project6.webp" alt="project6" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #6</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="./images/project7.webp" alt="project7" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #7</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="./images/project8.webp" alt="project8" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #8</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Testimonials -->
-      <section id="testimonials" class="section">
+      <section id="testimonials" class="section max-container">
         <h2 class="title">testimonials</h2>
         <p class="description">지인들의 나의 성격평가</p>
-        <ul>
-          <li>
-            <img src="/images/people1.webp" alt="people1" />
-            <div>
-              <p>민혁이의 성격은 OOO이다.</p>
-              <p><a href="#">노성웅</a> /대학교 동기</p>
+        <ul class="testimonials">
+          <li class="testimonial">
+            <img src="/images/people1.webp" alt="people1" class="testimonial__img"/>
+            <div class="testimonial__bubble">
+              <p>민혁이의 성격은 OOO이다.asdfsadfafasdfasdfasdfasdfasdfsadfafasdfasdfasdfasdfasdfsadfafas
+                dfasdfasdfasdfasdfsadfafasdfasdfasdfasdf</p>
+              <p><a href="#" class="testimonial__bubble__name">노성웅</a> /대학교 동기</p>
             </div>
           </li>
-          <li>
-            <img src="/images/people2.webp" alt="people2" />
-            <div>
-              <p>민혁이의 성격은 OOO이다.</p>
-              <p><a href="#">민창이형</a> /대학교 동기</p>
+          <li class="testimonial">
+            <img src="/images/people2.webp" alt="people2" class="testimonial__img"/>
+            <div class="testimonial__bubble">
+              <p>민혁이의 성격은 OOO이다.asdfsadfafasdfasdfasdfasdfasdfsadfafasdfasdfasdfasdfasdfsadfafa
+                sdfasdfasdfasdfasdfsadfafasdfasdfasdfasdf</p>
+              <p><a href="#" class="testimonial__bubble__name">민창이형</a> /대학교 동기</p>
             </div>
           </li>
-          <li>
-            <img src="/images/people3.webp" alt="people3" />
-            <div>
-              <p>민혁이의 성격은 OOO이다.</p>
-              <p><a href="#">유봉찬</a> /고등학교 동기</p>
+          <li class="testimonial">
+            <img src="/images/people3.webp" alt="people3" class="testimonial__img"/>
+            <div class="testimonial__bubble">
+              <p>민혁이의 성격은 OOO이다.asdfsadfafasdfasdfasdfasdfasdfsadfafasdfasdfasdfasdfasdfsadfafasd
+                fasdfasdfasdfasdfsadfafasdfasdfasdfasdf</p>
+              <p><a href="#" class="testimonial__bubble__name">유봉찬</a> /고등학교 동기</p>
             </div>
           </li>
         </ul>
       </section>
       <!-- Arrow up -->
       <aside>
-        <a href="#home" title="back to top">
+        <a class="arrow-up" href="#home" title="back to top">
           <i class="fa-solid fa-arrow-up"></i>
         </a>
       </aside>
     </main>
     <!-- Footer -->
     <footer id="contact" class="section">
-      <h2 class="title">Let&#39;s talk</h2>
-      <p class="description">alsgurdl258@gmail.com</p>
-      <ul>
-        <li>
-          <a
-            href="https://github.com/Hyukk2"
-            target="_blank"
-            title="my github link"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://velog.io/@8-months/posts"
-            target="_blank"
-            title="my blog link"
-          >
-            <i class="fa-solid fa-blog"></i>
-          </a>
-        </li>
-      </ul>
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">alsgurdl258@gmail.com</p>
+        <ul class="contact__links">
+          <li>
+            <a class="contact__link" href="https://github.com/Hyukk2" target="_blank" title="my github link">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a class="contact__link" href="https://velog.io/@8-months/posts" target="_blank" title="my blog link">
+              <i class="fa-solid fa-blog"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
