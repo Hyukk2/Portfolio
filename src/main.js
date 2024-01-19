@@ -1,3 +1,5 @@
+'use strict';
+
 const headerArea = document.querySelector(".header");
 const headerRect = headerArea.getBoundingClientRect();
 const headerNav = document.querySelector('.header__nav');
