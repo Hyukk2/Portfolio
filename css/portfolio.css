@@ -498,6 +498,8 @@ button:focus {
 .arrow-up {
   background-color: var(--color-primary);
   position: fixed;
+  opacity: 0;
+  visibility: hidden;
   bottom: 3rem;
   right: 3rem;
   font-size: 3rem;
