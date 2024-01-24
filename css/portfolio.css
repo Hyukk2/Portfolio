@@ -508,6 +508,7 @@ button:focus {
   line-height: 5rem;
   border-radius: 100%;
   text-align: center;
+  z-index: 1;
   box-shadow: var(--color-accent) 0px 0px 0px 2px,
     var(--color-accent) 0px 4px 6px -1px, var(--color-accent) 0px 1px 0px inset;
   transition: opacity 300ms ease-in;
